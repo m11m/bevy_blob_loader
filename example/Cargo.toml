@@ -10,7 +10,7 @@ edition.workspace = true
 crate-type = ["cdylib"]
 
 [dependencies]
-bevy = "0.18.1"
+bevy = "0.19"
 bevy_blob_loader.path = ".."
 js-sys.workspace = true
 wasm-bindgen.workspace = true

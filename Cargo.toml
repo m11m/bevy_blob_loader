@@ -23,7 +23,7 @@ wasm-bindgen-futures = "0.4.67"
 
 [dependencies]
 base64 = "0.22.1"
-bevy = "0.18.1"
+bevy = { version = "0.19", default-features = false, features = ["bevy_asset"] }
 js-sys.workspace = true
 wasm-bindgen.workspace = true
 wasm-bindgen-futures.workspace = true
