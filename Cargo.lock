@@ -541,7 +541,7 @@ dependencies = [
 
 [[package]]
 name = "bevy_blob_loader"
-version = "0.3.0"
+version = "0.4.0"
 dependencies = [
  "base64",
  "bevy",
@@ -2443,7 +2443,7 @@ dependencies = [
 
 [[package]]
 name = "example"
-version = "0.3.0"
+version = "0.4.0"
 dependencies = [
  "bevy",
  "bevy_blob_loader",
