@@ -11,7 +11,7 @@ resolver = "3"
 members = ["example"]
 
 [workspace.package]
-version = "0.4.0"
+version = "0.5.0"
 edition = "2024"
 repository = "https://github.com/m11m/bevy_blob_loader"
 license = "MIT OR Apache-2.0"
@@ -23,7 +23,7 @@ wasm-bindgen-futures = "0.4.67"
 
 [dependencies]
 base64 = "0.22.1"
-bevy = { version = "0.19", default-features = false, features = ["bevy_asset"] }
+bevy = { version = "0.20", default-features = false, features = ["bevy_asset"] }
 js-sys.workspace = true
 wasm-bindgen.workspace = true
 wasm-bindgen-futures.workspace = true
