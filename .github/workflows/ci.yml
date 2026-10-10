@@ -27,7 +27,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - run: nix develop -c cargo clippy --fix --no-deps
       - run: nix develop -c cargo fmt --all
-      - uses: EndBug/add-and-commit@v10
+      - uses: EndBug/add-and-commit@v11
         with:
           message: "chore: format"
           default_author: github_actions
