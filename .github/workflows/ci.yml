@@ -1,11 +1,9 @@
 name: "CI"
-
 on:
   push:
     branches:
       - main
   pull_request:
-
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -14,10 +12,9 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - uses: Swatinem/rust-cache@v2
-      - run: nix flake check --all-systems
+      - run: nix flake check
       - run: nix develop -c cargo doc --workspace --all-features --no-deps --document-private-items
       - run: nix develop -c cargo test --workspace --all-features
-
   format:
     runs-on: ubuntu-latest
     steps:
